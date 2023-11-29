@@ -3,7 +3,8 @@ import React from "react";
 import banner from "@/public/about/banner.png";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({ subsets: ["latin"], weight: "600" });
-const About = () => {
+
+const page = ({ params }) => {
     return (
         <section>
             <div className="banner-page">
@@ -12,7 +13,7 @@ const About = () => {
             <div className="container mx-auto px-4 py-16 2xl:px-0">
                 <article>
                     <h2 className={`title-page ${poppins.className}`}>
-                        About Us
+                        Single Blog
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -60,4 +61,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default page;
